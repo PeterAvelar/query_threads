@@ -1,4 +1,7 @@
+Query com Threads para Delphi 7.
+
 🇧🇷 Português
+
 📌 Funcionalidades
 
 Executa consultas de banco de dados em threads para evitar travamento da interface.
