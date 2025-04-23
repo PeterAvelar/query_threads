@@ -9,12 +9,12 @@ Gerenciamento de threads para evitar vazamento de recursos.
 
 Compatível com TADOQuery, TDBGrid e parâmetros.
 
-⚙️ Pré-requisitos
-IDE Delphi 7.
+⚙️ Pré-requisitos: IDE Delphi 7.
 
 Conexão de banco de dados configurada via ADOConnection.
 
 🛠 Como Usar
+
 Adicione a unit
 Adicione UntThreadPesq.pas ao seu projeto Delphi.
 
@@ -47,6 +47,7 @@ Formate a grid (no evento OnDataChange do DataSource):
 Ajuste a formatação da grid aqui para refletir os resultados.
 
 ⚠️ Observações Importantes
+
 Segurança de threads: Atualizações da UI usam Synchronize para evitar conflitos.
 
 Parâmetros: Certifique-se de passá-los corretamente para a query.
@@ -55,6 +56,7 @@ Limpeza de recursos: Sempre chame CleanupOldThreads ao fechar o formulário.
 
 🇺🇸 English
 📌 Features
+
 Executes database queries in background threads to avoid UI freezing.
 
 Automatically updates the grid when the query finishes.
@@ -63,12 +65,12 @@ Thread management to prevent resource leaks.
 
 Compatible with TADOQuery, TDBGrid, and parameters.
 
-⚙️ Prerequisites
-Delphi 7 IDE.
+⚙️ Prerequisites: Delphi 7 IDE.
 
 Database connection configured via ADOConnection.
 
 🛠 How to Use
+
 Add the unit
 Add UntThreadPesq.pas to your Delphi project.
 
@@ -101,6 +103,7 @@ Format the grid (in the DataSource's OnDataChange event):
 Adjust grid formatting here to reflect query results.
 
 ⚠️ Important Notes
+
 Thread safety: UI updates are done via Synchronize to avoid conflicts.
 
 Parameter handling: Ensure parameters are correctly assigned to the query.
