@@ -24,11 +24,10 @@ Adicione UntThreadPesq.pas ao seu projeto Delphi.
 Declare a variável de thread
 Na seção pública do formulário:
 
-delphi
+
 Thread: TThreadPesq;  
 Execute a pesquisa (ex.: no evento OnChange de um Edit):
 
-delphi
 try  
   Thread := ThreadPesqManager.CreateNewThread(  
     DM.ADOConnection1.ConnectionString,  
@@ -44,7 +43,7 @@ except
 end;  
 Limpe threads ao fechar o formulário (em FormClose):
 
-delphi
+
 ThreadPesqManager.CleanupOldThreads;  
 Formate a grid (no evento OnDataChange do DataSource):
 Ajuste a formatação da grid aqui para refletir os resultados.
@@ -80,11 +79,11 @@ Add UntThreadPesq.pas to your Delphi project.
 Declare the thread variable
 In your form's public section:
 
-delphi
+
 Thread: TThreadPesq;  
 Trigger the search (e.g., in an Edit's OnChange event):
 
-delphi
+
 try  
   Thread := ThreadPesqManager.CreateNewThread(  
     DM.ADOConnection1.ConnectionString,  
@@ -100,7 +99,7 @@ except
 end;  
 Clean up threads on form close (in FormClose):
 
-delphi
+
 ThreadPesqManager.CleanupOldThreads;  
 Format the grid (in the DataSource's OnDataChange event):
 Adjust grid formatting here to reflect query results.
