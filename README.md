@@ -4,12 +4,7 @@ Query com Threads para Delphi 7.
 
 📌 Funcionalidades
 
-Executa consultas de banco de dados em threads para evitar travamento da interface.
-
-Atualiza automaticamente a grid ao finalizar a consulta.
-
-Gerenciamento de threads para evitar vazamento de recursos.
-
+Executa consultas de banco de dados em threads para evitar travamento da interface. Atualiza automaticamente a grid ao finalizar a consulta. Gerenciamento de threads para evitar vazamento de recursos.
 Compatível com TADOQuery, TDBGrid e parâmetros.
 
 ⚙️ Pré-requisitos: IDE Delphi 7.
@@ -21,13 +16,10 @@ Conexão de banco de dados configurada via ADOConnection.
 Adicione a unit
 Adicione UntThreadPesq.pas ao seu projeto Delphi.
 
-Declare a variável de thread
-Na seção pública do formulário:
-
-
+Declare a variável de thread na seção pública do formulário:
 Thread: TThreadPesq;  
-Execute a pesquisa (ex.: no evento OnChange de um Edit):
 
+Execute a pesquisa (ex.: no evento OnChange de um Edit):
 try  
   Thread := ThreadPesqManager.CreateNewThread(  
     DM.ADOConnection1.ConnectionString,  
@@ -41,10 +33,10 @@ try
 except  
   // Trate exceções  
 end;  
+
 Limpe threads ao fechar o formulário (em FormClose):
-
-
 ThreadPesqManager.CleanupOldThreads;  
+
 Formate a grid (no evento OnDataChange do DataSource):
 Ajuste a formatação da grid aqui para refletir os resultados.
 
@@ -76,14 +68,10 @@ Database connection configured via ADOConnection.
 Add the unit
 Add UntThreadPesq.pas to your Delphi project.
 
-Declare the thread variable
-In your form's public section:
-
-
+Declare the thread variable in your form's public section:
 Thread: TThreadPesq;  
+
 Trigger the search (e.g., in an Edit's OnChange event):
-
-
 try  
   Thread := ThreadPesqManager.CreateNewThread(  
     DM.ADOConnection1.ConnectionString,  
@@ -97,19 +85,17 @@ try
 except  
   // Handle exceptions  
 end;  
+
 Clean up threads on form close (in FormClose):
-
-
 ThreadPesqManager.CleanupOldThreads;  
+
 Format the grid (in the DataSource's OnDataChange event):
 Adjust grid formatting here to reflect query results.
 
 ⚠️ Important Notes
 
 Thread safety: UI updates are done via Synchronize to avoid conflicts.
-
 Parameter handling: Ensure parameters are correctly assigned to the query.
-
 Resource cleanup: Always call CleanupOldThreads when closing the form.
 
 Nota do Autor/Author Note
