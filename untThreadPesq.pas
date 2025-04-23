@@ -44,7 +44,7 @@ type
    procedure RemoveThread(ThreadID: Integer);
   end;
 
-var ThreadPesqManager: TThreadPesqManager; // Variável global para o gerenciador de threads
+var ThreadPesqManager: TThreadPesqManager; 
 
 implementation
 
