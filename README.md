@@ -1,5 +1,6 @@
 🇧🇷 Português
 📌 Funcionalidades
+
 Executa consultas de banco de dados em threads para evitar travamento da interface.
 
 Atualiza automaticamente a grid ao finalizar a consulta.
