@@ -1,6 +1,6 @@
 <h1>Query com Threads para Delphi 7.</h1>
 
-<h1>🇧🇷 Português</h1>
+<h1>Português</h1>
 
 <h2>📌 Funcionalidades</h2>
 
@@ -48,7 +48,7 @@ Parâmetros: Certifique-se de passá-los corretamente para a query.
 
 Limpeza de recursos: Sempre chame CleanupOldThreads ao fechar o formulário.
 
-<h1>🇺🇸 English</h1>
+<h1>English</h1>
 <h2>📌 Features</h2>
 
 Executes database queries in background threads to avoid UI freezing.
@@ -59,7 +59,7 @@ Thread management to prevent resource leaks.
 
 Compatible with TADOQuery, TDBGrid, and parameters.
 
-<h2>⚙️ Prerequisites: Delphi 7 IDE.</h2>h2>
+<h2>⚙️ Prerequisites: Delphi 7 IDE.</h2>
 
 Database connection configured via ADOConnection.
 
